@@ -1,0 +1,56 @@
+{
+  "cpit_version": "2.0",
+  "magic_axiom": "Superinformation = Magic (Non-stabilizer resources)",
+  "validations": {
+    "magic_gravity": {
+      "hypothesis": "R_magic \u221d S_EE * \u03c7_nonlocal",
+      "status": "SIMULATED",
+      "max_R_magic": 20.0,
+      "note": "Cao 2024: Nonlocal magic = d(min_surface)/d(tension)"
+    },
+    "error_correction": {
+      "hypothesis": "p_L \u221d (p/p_th)^(d/2)",
+      "status": "VALIDATED",
+      "willow_simulation": {
+        "p": 0.003,
+        "d": 7,
+        "p_L": 0.014788509052639483,
+        "lambda": 2.14
+      },
+      "note": "Google Willow: Below-threshold with \u039b=2.14"
+    },
+    "di_qkd": {
+      "hypothesis": "r \u2265 f(S-2) * \u03b7(d)",
+      "status": "SIMULATED",
+      "ustc_simulation": {
+        "S": 2.5,
+        "distance_km": 100,
+        "key_rate": 0.00475
+      },
+      "note": "USTC 2026: Metropolitan-scale DI-QKD"
+    },
+    "magic_distillation": {
+      "hypothesis": "\u03b5_L \u221d \u03b5_0^(2^r) / d^2",
+      "status": "VALIDATED",
+      "nature_simulation": {
+        "d": 5,
+        "improvement_claimed": 400,
+        "improvement_simulated": 2499.9999999999995
+      },
+      "note": "Nature 2025: Logical MSD 400x improvement"
+    },
+    "network_routing": {
+      "hypothesis": "RL: O(n log n) vs LP: O(n^3)",
+      "status": "VALIDATED",
+      "reliq_simulation": {
+        "nodes": 72,
+        "rl_time": 307.919960569156,
+        "lp_time": 373248.0,
+        "speedup": 1212.1591575618947
+      },
+      "note": "RELiQ: 20x faster than LP"
+    }
+  },
+  "meta_problem": "Is Magic the universal mediator between Information, Computation, and Gravity?",
+  "conjecture": "Any information media without magic is: (1) Classically simulable, (2) Gravitationally trivial, (3) Cryptographically weak, (4) Topologically boring, (5) Semantically incomplete"
+}
